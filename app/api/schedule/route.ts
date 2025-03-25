@@ -14,9 +14,14 @@ export async function POST(req: NextRequest) {
         }
 
         const prompt = `
-You're an expert day planner. Given these tasks: ${tasks.join(', ')}.
-Create an optimal schedule with specific times, clearly explaining why each task is scheduled at that time.
-    `;
+You are an elite, high-performance day planner.
+
+Given the following tasks: ${tasks.join(', ')}
+
+Create a smart, time-blocked schedule for the day. Prioritize tasks based on urgency, dependencies, and logical flow. Assign exact time slots, group similar activities, and account for constraints like energy levels or availability.
+
+After the schedule, include a short explanation of *why* you ordered the tasks this way. Be concise, confident, and clear.
+`;
 
         const response = await openai.chat.completions.create({
             model: 'gpt-4o',
