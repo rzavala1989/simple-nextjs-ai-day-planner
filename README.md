@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Complete Write-Up
 
-## Getting Started
+## Project Overview
+I built an AI-powered day planner using Next.js with the App Router, leveraging React and TanStack Query for state management. The app allows users to input daily tasks, which are then processed by an OpenAI model (GPT-4o) to generate an optimized schedule. The design is mobile-first, featuring a scrollable output area and a sticky input section, ensuring a seamless and accessible user experience.
 
-First, run the development server:
+## Technical Stack
+- **Next.js (App Router):** Utilized for server and client components, ensuring secure API calls and efficient server-side rendering.
+- **React & TanStack Query:** Employed for managing state and API calls, with built-in handling of loading, error, and caching states.
+- **Tailwind CSS:** Provided rapid, responsive styling with a mobile-first approach. Custom gradients and dark mode support were added for a modern aesthetic.
+- **OpenAI API:** Integrated in a secure, server-only API route to generate schedules using GPT-4o.
+- **Vercel:** Deployed the app on Vercel, leveraging its seamless integration with Next.js for fast builds and global distribution.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
+- **Classy, Distinct UI:**  
+  A sophisticated header with a gradient background and elegant typography sets a premium tone. The layout includes a sticky footer for task input, ensuring it remains accessible even when the schedule output is scrollable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Robust State Management:**  
+  TanStack Query manages API mutations, providing clear feedback for loading and error states, which ensures a smooth, responsive experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Security & Scalability:**  
+  The OpenAI API key is securely handled server-side, with environment variables configured in Vercel for safe deployments.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive & Accessible Design:**  
+  The layout is optimized for both mobile and desktop, featuring clear, legible text and proper accessibility roles.
 
-## Learn More
+## Deployment & Workflow
+- **Version Control & CI/CD:**  
+  The code is maintained in a GitHub repository, with Vercel automating the build and deployment process.
 
-To learn more about Next.js, take a look at the following resources:
+- **Environment Configuration:**  
+  Sensitive API keys are securely stored via environment variables, ensuring they are not exposed on the client side.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Modular & Future-Proof Architecture:**  
+  The application’s modular design facilitates easy updates and the integration of additional features in the future.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
+- **Enhanced UI Animations:**  
+  Integrate custom animations using libraries like Framer Motion for smoother transitions and interactive feedback.
 
-## Deploy on Vercel
+- **User Authentication & Personalization:**  
+  Implement user accounts to allow users to save, manage, and personalize their schedules along with historical data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Extended AI Capabilities:**  
+  Expand the scheduling logic to handle more complex inputs and incorporate additional AI features such as natural language processing for advanced task prioritization.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Improved Error Handling & Notifications:**  
+  Enhance error handling by implementing user-friendly notifications and advanced logging, possibly integrating with a monitoring service like Sentry.
+
+- **Analytics & Monitoring:**  
+  Integrate analytics tools to track user interactions and app performance, enabling data-driven improvements over time.
+
+## Conclusion
+This project showcases my ability to architect a full-stack web application using a modern tech stack, ensuring robust performance, scalability, and an exceptional user experience. By combining a clean design with effective state management and secure API integration, I delivered a polished, production-ready product. The modular architecture not only supports current functionalities but also sets the stage for future enhancements and scalability.
