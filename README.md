@@ -1,4 +1,7 @@
-# Complete Write-Up
+# Digital Day Planner Write-Up
+
+
+![In Action](./public/day-planner-gif.gif)
 
 ## Project Overview
 I built an AI-powered day planner using Next.js with the App Router, leveraging React and TanStack Query for state management. The app allows users to input daily tasks, which are then processed by an OpenAI model (GPT-4o) to generate an optimized schedule. The design is mobile-first, featuring a scrollable output area and a sticky input section, ensuring a seamless and accessible user experience.
@@ -32,6 +35,11 @@ I built an AI-powered day planner using Next.js with the App Router, leveraging 
 
 - **Modular & Future-Proof Architecture:**  
   The application’s modular design facilitates easy updates and the integration of additional features in the future.
+
+## Screenshots
+![Homepage Screenshot](./public/day-planner-desktop.png)
+![Schedule Output](./public/day-planner-mobile.png)
+
 
 ## Future Improvements
 - **Enhanced UI Animations:**  
