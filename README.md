@@ -8,8 +8,8 @@ I built an AI-powered day planner using Next.js with the App Router, leveraging 
 
 ## Technical Stack
 - **Next.js (App Router):** Utilized for server and client components, ensuring secure API calls and efficient server-side rendering.
-- **React & TanStack Query:** Employed for managing state and API calls, with built-in handling of loading, error, and caching states.
-- **Tailwind CSS:** Provided rapid, responsive styling with a mobile-first approach. Custom gradients and dark mode support were added for a modern aesthetic.
+- **TanStack Query:** Employed for managing state and API calls, with built-in handling of loading, error, and caching states.
+- **Tailwind CSS/shadcn:** Provided rapid, responsive styling with a mobile-first approach. Custom gradients and dark mode support were added for a modern aesthetic.
 - **OpenAI API:** Integrated in a secure, server-only API route to generate schedules using GPT-4o.
 - **Vercel:** Deployed the app on Vercel, leveraging its seamless integration with Next.js for fast builds and global distribution.
 
@@ -42,17 +42,18 @@ I built an AI-powered day planner using Next.js with the App Router, leveraging 
 
 
 ## Future Improvements
-- **Enhanced UI Animations:**  
-  Integrate custom animations using libraries like Framer Motion for smoother transitions and interactive feedback.
 
 - **User Authentication & Personalization:**  
   Implement user accounts to allow users to save, manage, and personalize their schedules along with historical data.
 
-- **Extended AI Capabilities:**  
-  Expand the scheduling logic to handle more complex inputs and incorporate additional AI features such as natural language processing for advanced task prioritization.
+- **Context-Aware Scheduling:**  
+  Incorporate memory and contextual awareness so the AI can remember past behaviors, preferences, or task patterns — e.g. "Always prioritize gym after work on Mondays."
 
-- **Improved Error Handling & Notifications:**  
-  Enhance error handling by implementing user-friendly notifications and advanced logging, possibly integrating with a monitoring service like Sentry.
+- **Natural Language Flexibility:**  
+  Improve parsing of more casual or messy input — things like "maybe hit the gym?" or "something with the kids after 5" — to give the AI more room to improvise and humanize the response.
+
+- **Smart Prioritization Engine:**  
+  Allow the AI to infer importance based on urgency, dependencies, or deadlines, and to re-prioritize dynamically if users modify their tasks.
 
 - **Analytics & Monitoring:**  
   Integrate analytics tools to track user interactions and app performance, enabling data-driven improvements over time.
